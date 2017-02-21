@@ -1,0 +1,64 @@
+<div class="jumbotron text-center">
+    <h1>{{message}}</h1>
+    <!--<div class="col-md-10">-->
+        <!--<h2> Articles <span class="badge"> {{ numArticles }} </span> </h2>-->
+        <!--<div class="col-md-4" ng-repeat="elem in list">-->
+            <!--<h4> {{ elem.title }} </h4>-->
+            <!--<p> {{ elem.desc }} </p>-->
+            <!--<div class="col-sd-4" ng-repeat="it in elem.tags">-->
+                <!--<span class="tagElement">{{ it }}</span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div ng-controller="itemsController as list">
+        <table align="center" valign="middle">
+            <tbody ng-repeat="item in items">
+
+    <!--<div class="row">-->
+        <!--<div class="col-sm-6 col-md-4">-->
+            <!--<div class="thumbnail">-->
+                    <!--<img src="http://www.newyorkvinnyspizza.com/?action=img&p=menu&src=dfc544ad7ffa61b7f13aa56124ff3cbd.png"-->
+                 <!--alt="..." class="img-responsive">-->
+                <!--<div class="caption">-->
+                    <!--<h3>Plain Cheese {{items.name}}</h3>-->
+                    <!--<p>Regular Base, Regular Sause, Cheese</p>-->
+                    <!--<p><a href="#" class="btn btn-success" role="button">Add to Cart</a></p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+            <tr style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle"; >
+            <td>
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{item.name}}</span>
+            </td>
+
+            <td>
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{item.description}}</span>
+            </td>
+            <td>
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{item.calories}}</span>
+            </td>
+            <td>
+                <span class="glyphicon glyphicon-euro"></span>
+                {{item.price}}
+            </td>
+
+            <td>
+
+                <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>
+
+
+                <button type="button" class="btn btn-default" ng-click="delete(item._id)">
+                    <span class="glyphicon glyphicon-remove"></span> Remove
+                </button>
+                <button type="button" class="btn btn-default" ng-click="update(item)">
+                    <span class="glyphicon glyphicon-edit"></span> Edit
+                </button>
+                </span>
+            </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

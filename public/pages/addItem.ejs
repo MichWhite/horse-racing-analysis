@@ -1,0 +1,59 @@
+<div class="jumbotron text-center">
+	<h1>Add An Item to the Menu</h1>
+
+	
+<div ng-controller="editmenuController">
+	<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+      <form ng-submit="addDonation()"
+        style="margin-top:30px;">
+        <h3>Add a new Item</h3>
+
+        <div class="form-group" align="center">
+
+
+        <div class="form-group" align="center">
+          <h5>Name of Item</h5>
+          <input type="text"
+                 class="form-control"
+                 placeholder="The New Yorker"
+                 ng-model="formData.name"
+                 ng-style="{'width': 100 + 'px'}"></input>
+        </div>
+        <div class="form-group" align="center">
+          <h5>Price of Item</h5>
+          <input type="number"
+                 class="form-control"
+                 placeholder="16.50"
+                 ng-model="formData.price"
+                 ng-style="{'width': 100 + 'px'}"></input>
+        </div>
+        <div class="form-group" align="center">
+          <h5>Description of Item</h5>
+          <input type="text"
+                 class="form-control"
+                 placeholder="Regular Base, Regular Sauce, Extra Pepperoni, Sliced Irish Sausage, Ham"
+                 ng-model="formData.description"
+                 ng-style="{'width': 100 + 'px'}"></input>
+        </div>
+        <div class="form-group" align="center">
+          <h5>Amount of Calories in Item</h5>
+          <input type="number"
+                 class="form-control"
+                 placeholder="100"
+                 ng-model="formData.calories"
+                 ng-style="{'width': 100 + 'px'}"></input>
+        </div>
+          <h5>Type of Item</h5>
+          <select ng-model="formData.type" class="form-control" ng-show="formData.type"
+                ng-options="option.name for option in options"
+                ng-style="{'width': 100 + 'px'}">
+        </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Item</button>
+      </form>
+
+    </div>
+  </div>
+</div>
