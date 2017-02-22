@@ -7,7 +7,11 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var items = require('./routes/items.js');
+var pizzas = require('./routes/pizzas.js');
+
+var deserts = require('./routes/deserts.js');
+var sides = require('./routes/sides.js');
+var drinks = require('./routes/drinks.js');
 
 var app = express();
 
@@ -26,12 +30,26 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
-app.get('/items', items.findAll);
-app.get('/items/:id', items.findOne);
-app.post('/items', items.addItem);
-app.delete('/items/:id', items.deleteItem);
+app.get('/pizzas', pizzas.findAll);
+app.get('/pizzas/:id', pizzas.findOne);
+app.post('/pizzas', pizzas.addPizza);
+app.delete('/pizzas/:id', pizzas.deletePizza);
 
 
+app.get('/deserts', deserts.findAll);
+app.get('/deserts/:id', deserts.findOne);
+app.post('/deserts', deserts.addDesert);
+app.delete('/deserts/:id', deserts.deleteDesert);
+
+app.get('/drinks', drinks.findAll);
+app.get('/drinks/:id', drinks.findOne);
+app.post('/drinks', drinks.addDrink);
+app.delete('/drinks/:id', drinks.deleteDrink);
+
+app.get('/sides', sides.findAll);
+app.get('/sides/:id', sides.findOne);
+app.post('/sides', sides.addSide);
+app.delete('/sides/:id', sides.deleteSide);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

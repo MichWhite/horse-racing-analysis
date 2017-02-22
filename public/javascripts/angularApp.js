@@ -3,22 +3,34 @@ var app = angular.module('PizzaPlaceWebApp', ['ngRoute']);
 app.config(function($routeProvider) {
         $routeProvider
 
-            // route for the home page
             .when('/', {
                 templateUrl : 'pages/home.ejs',
                 controller  : 'mainController'
             })
 
-             // route for the donate page
             .when('/edit', {
                 templateUrl : 'pages/addItem.ejs',
                 controller  : 'addItemController'
             })
 
-             // route for the donations page
             .when('/menu', {
-                templateUrl : 'pages/items.ejs',
-                controller  : 'itemsController'
+                templateUrl : 'pages/pizzas.ejs',
+                controller  : 'pizzasController'
+            })
+
+            .when('/deserts', {
+                templateUrl : 'pages/deserts.ejs',
+                controller  : 'desertsController'
+            })
+
+            .when('/sides', {
+                templateUrl : 'pages/sides.ejs',
+                controller  : 'sidesController'
+            })
+
+            .when('/drinks', {
+                templateUrl : 'pages/drinks.ejs',
+                controller  : 'drinksController'
             });
     });
 

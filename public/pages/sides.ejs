@@ -1,0 +1,63 @@
+<div class="jumbotron text-center">
+    <h1> MENU </h1>
+    <h3>{{message}}</h3>
+
+    <div ng-controller="sidesController as list">
+        <div class="row">
+
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-3 col-lg-2">
+                                <nav class="navbar navbar-default navbar-fixed-side">
+                                    <p><a href="#specials"> Specials </a></p>
+                                    <p><a href="#menu"> Pizzas </a></p>
+                                    <p><a href="#sides"> Sides </a></p>
+                                    <p><a href="#deserts"> Deserts </a></p>
+                                    <p><a href="#drinks">Drinks </a></p>
+
+
+                                </nav>
+                            </div>
+
+
+                            <table align="center" class="col-sm-9 col-lg-10" valign="middle">
+                                <th> Name </th>
+                                <th> Calories </th>
+                                <th> Price </th>
+                                <tbody ng-repeat="side in sides">
+
+                                <tr>
+                                    <td>
+
+                                <tr style="height:55px; font-size:20px; margin-left:20px; valign="middle"; >
+                                <td>
+                                    <span style="height:55px; font-size:20px; margin-left:20px;  valign="middle";>{{side.name}}</span>
+                                </td>
+
+                                <td>
+                                    <span style="height:55px; font-size:20px; margin-left:20px; valign="middle";>{{side.calories}}</span>
+                                </td>
+                                <td>
+                                    <span class="glyphicon glyphicon-euro"></span>
+                                    {{side.price}}
+                                </td>
+
+                                <td>
+
+
+
+
+                                    <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>
+                                    <button type="button" class="btn btn-success" ng-click="addToCart(side._id)"> Add To Cart
+                                    </button>
+                                    </span>
+                                </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+</div>
+</div>
+</div>
+</div>

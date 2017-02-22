@@ -2,6 +2,7 @@
 <head>
   <title>PIZZA PLACE</title>
 
+  <link rel="stylesheet" href="./stylesheets/style.css" />
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" />
 
@@ -11,8 +12,11 @@
   <script src="/javascripts/angularApp.js"></script>
   <script src="/javascripts/controllers/maincontroller.js"></script>
   <script src="/javascripts/controllers/editmenucontroller.js"></script>
-  <script src="/javascripts/controllers/itemscontroller.js"></script>
-  <script src="/javascripts/controllers/aboutcontroller.js"></script>
+  <script src="/javascripts/controllers/pizzascontroller.js"></script>
+
+  <script src="/javascripts/controllers/desertscontroller.js"></script>
+  <script src="/javascripts/controllers/drinkscontroller.js"></script>
+  <script src="/javascripts/controllers/sidescontroller.js"></script>
 
   <style> .glyphicon-thumbs-up { cursor:pointer } </style>
 </head>
@@ -46,10 +50,6 @@
   <div ng-view></div>
 
 </div>
-<footer class="text-center">
 
-  <p><a href="#about"><i class="fa fa-info"></i> About</a></p>
-  <p><a href="#contact"><i class="fa fa-comment"></i> Contact</a></p>
-</footer>
 </body>
 </html>

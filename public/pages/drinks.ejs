@@ -1,0 +1,67 @@
+<div class="jumbotron text-center">
+    <h1> MENU </h1>
+    <h3>{{message}}</h3>
+
+    <div ng-controller="drinksController as list">
+        <div class="row">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-lg-2">
+                        <nav class="navbar navbar-default navbar-fixed-side">
+                            <p><a href="#specials"> Specials </a></p>
+                            <p><a href="#menu"> Pizzas </a></p>
+                            <p><a href="#sides"> Sides </a></p>
+                            <p><a href="#deserts"> Deserts </a></p>
+                            <p><a href="#drinks">Drinks </a></p>
+
+
+                        </nav>
+                    </div>
+
+
+                    <table align="center" class="col-sm-9 col-lg-10" valign="middle">
+                        <th> Name </th>
+                        <th> Litre </th>
+                        <th> Calories </th>
+                        <th> Price </th>
+                        <tbody ng-repeat="drink in drinks">
+
+                        <tr>
+                            <td>
+
+                        <tr style="height:55px; font-size:20px; margin-left:20px; valign="middle"; >
+                        <td>
+                            <span style="height:55px; font-size:20px; margin-left:20px;  valign="middle";>{{drink.name}}</span>
+                        </td>
+                        <td>
+                            <span style="height:55px; font-size:20px; margin-left:20px;  valign="middle";>{{drink.litre}}</span>
+                        </td>
+
+                        <td>
+                            <span style="height:55px; font-size:20px; margin-left:20px; valign="middle";>{{drink.calories}}</span>
+                        </td>
+                        <td>
+                            <span class="glyphicon glyphicon-euro"></span>
+                            {{drink.price}}
+                        </td>
+
+                        <td>
+
+
+
+
+                            <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>
+                            <button type="button" class="btn btn-success" ng-click="addToCart(drink._id)"> Add To Cart
+                            </button>
+                            </span>
+                        </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+</div>
+</div>
+</div>
+</div>
