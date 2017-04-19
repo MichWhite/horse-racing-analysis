@@ -4,14 +4,18 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var cookieSession = require('cookie-session');
+// var echarts = require('echarts');
+
+var horses = require('./routes/horses');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
-var pizzas = require('./routes/pizzas.js');
 
-var deserts = require('./routes/deserts.js');
-var sides = require('./routes/sides.js');
-var drinks = require('./routes/drinks.js');
+var events = require('./routes/events.js');
+var races = require('./routes/races.js');
+var results = require('./routes/results.js');
+var historical = require('./routes/historical.js');
+// var admin = require('./routes/admin.js');
 
 var app = express();
 
@@ -27,29 +31,28 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
 app.use('/', routes);
-app.use('/users', users);
-
-app.get('/pizzas', pizzas.findAll);
-app.get('/pizzas/:id', pizzas.findOne);
-app.post('/pizzas', pizzas.addPizza);
-app.delete('/pizzas/:id', pizzas.deletePizza);
 
 
-app.get('/deserts', deserts.findAll);
-app.get('/deserts/:id', deserts.findOne);
-app.post('/deserts', deserts.addDesert);
-app.delete('/deserts/:id', deserts.deleteDesert);
+app.get("/horses", horses.findAll);
+app.get('/horses/:EventId', horses.findEvent);
+app.get('/horses/:id', horses.findOne);
 
-app.get('/drinks', drinks.findAll);
-app.get('/drinks/:id', drinks.findOne);
-app.post('/drinks', drinks.addDrink);
-app.delete('/drinks/:id', drinks.deleteDrink);
 
-app.get('/sides', sides.findAll);
-app.get('/sides/:id', sides.findOne);
-app.post('/sides', sides.addSide);
-app.delete('/sides/:id', sides.deleteSide);
+app.get('/races', races.findAll);
+
+app.get('/results', results.findAll);
+
+app.get('/historical', historical.findAll);
+
+
+app.get('/events', events.findAll);
+app.get('/events/:id', events.findOne);
+
+// app.get('/admin/products', admin.findAll);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

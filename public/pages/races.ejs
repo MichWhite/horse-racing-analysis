@@ -1,0 +1,80 @@
+<div class="jumbotron text-center">
+    <!--<div ng-repeat="e in event">-->
+    <h2>{{event.EventLocation}} - {{event.EventName}}</h2>
+
+    <h3>{{event.EventTime}} {{event.EventDate}}</h3>
+    <div class="EventDetail">
+        (Going: {{event.EventGoing}},
+        No. Of Runners: {{event.EventNoRunners}},
+        Age category: {{event.EventAgeCategory}},
+        Distance: {{event.EventLength}})
+    </div>
+<!--</div>-->
+        <div ng-controller="raceController as list">
+
+
+            <table height="auto" class="table table-responsive table-hover table-bordered " id="raceTable" text-align="center" valign="middle" halign="middle">
+                <thead>
+                <tr>
+                <th class="not_mapped_style" align="center"> No </th>
+                <th  align="center"> Runner Name </th>
+                <!--<th> ODDS </th>-->
+                <!--<th> Form </th>-->
+                <!--<th> Age </th>-->
+                <!--<th> Weight </th>-->
+                <th> Trainer </th>
+                <th> Jockey </th>
+                <th> Score </th>
+                </tr>
+                </thead>
+                <tbody  ng-repeat="race in races |  orderBy: '-Score'"  >
+
+                <!--EventId: String,-->
+                <!--RunnerNo: Number,-->
+                <!--HorseName: String,-->
+                <!--HorseForm: String,-->
+                <!--HorseAge: Number,-->
+                <!--HorseWeiht: String,-->
+                <!--Trainer: String,-->
+                <!--Jockey: String,-->
+                <!--OR: Number-->
+                <tr style="height:auto; font-size:20px; margin-left:20px; valign="middle"; >
+                <td>
+                    <span style="height:55px; font-size:20px; margin-left:20px;  valign="middle";>{{race.RunnerNo}}</span>
+                </td>
+                <td>
+                    <span style="height:auto; font-size:20px; margin-left:20px;  valign="middle";>{{race.HorseName}}</span>
+                </td>
+
+                <td>
+                    <span style="height:55px; font-size:20px; margin-left:20px; valign="middle";>{{race.Trainer}}</span>
+                </td>
+                <!--<td>-->
+                    <!--<span style="height:55px; font-size:20px; margin-left:20px; valign="middle";>{{race.form}}</span>-->
+                <!--</td>-->
+                <!--<td>-->
+                    <!--<span style="height:55px; font-size:20px; margin-left:20px; valign="middle";>{{race.Age}}</span>-->
+                <!--</td>-->
+                <!--<td>-->
+                    <!--<span style="height:55px; font-size:20px; margin-left:20px; valign="middle";>{{race.Weight}}</span>-->
+                <!--</td>-->
+                <td>
+                    <span style="height:55px; font-size:20px; margin-left:20px; valign="middle";>{{race.Jockey}}</span>
+                </td>
+                <td>
+                    <span style="height:55px; font-size:20px; margin-left:20px; valign="middle";>{{race.Score}}</span>
+                </td>
+                </tr>
+                <!--<a ui-sref="profile.username({race.Jockey})">{{ race.Jockey }}</a>-->
+                </tbody>
+            </table>
+
+        </div>
+    <!--<canvas>{{canvas}}</canvas>-->
+    <!--<div id="main" style="width: 600px;height:400px;"></div>-->
+
+
+    <div id="chartContainer" align="center" valign="middle"  style="width:70%;">
+        <canvas id="myChart" ></canvas>
+    </div>
+</div>

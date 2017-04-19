@@ -1,6 +1,33 @@
-var app = angular.module('PizzaPlaceWebApp', ['ngRoute']);
+var app = angular.module('WebApp', ['ngRoute', 'ui', 'ui.filters']);
 
-app.config(function($routeProvider) {
+
+app.factory('historical', ['$http', function($http) {
+    var historical = [];
+
+
+    return {
+        historical:  function findAllHistorical() {
+        $http.get('/historical')
+            .success(function (data) {
+                console.log('HOW?' +data);
+                historical = data;
+                return data;
+            })
+            .error(function (data) {
+                console.log('Error: ' + data);
+            });
+    }
+    }
+}]);
+
+
+
+
+
+
+app.config(['$locationProvider' ,'$routeProvider',
+    function config($locationProvider, $routeProvider) {
+        $locationProvider.hashPrefix('');
         $routeProvider
 
             .when('/', {
@@ -8,31 +35,22 @@ app.config(function($routeProvider) {
                 controller  : 'mainController'
             })
 
-            .when('/edit', {
-                templateUrl : 'pages/addItem.ejs',
-                controller  : 'addItemController'
-            })
+            .when('/events', {
+                templateUrl : 'pages/events.ejs',
+                controller  : 'eventsController'
+            }).
+        when('/races/:EventId', {
+            templateUrl: 'pages/races.ejs',
+            controller: 'raceController'
 
-            .when('/menu', {
-                templateUrl : 'pages/pizzas.ejs',
-                controller  : 'pizzasController'
-            })
+        }).
+        when('/results', {
+            templateUrl: 'pages/results.ejs',
+            controller: 'resultsController'
 
-            .when('/deserts', {
-                templateUrl : 'pages/deserts.ejs',
-                controller  : 'desertsController'
-            })
+        });
 
-            .when('/sides', {
-                templateUrl : 'pages/sides.ejs',
-                controller  : 'sidesController'
-            })
-
-            .when('/drinks', {
-                templateUrl : 'pages/drinks.ejs',
-                controller  : 'drinksController'
-            });
-    });
+    }]);
 
 
   

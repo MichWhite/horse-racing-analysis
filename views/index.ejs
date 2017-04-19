@@ -1,43 +1,53 @@
-<html ng-app="PizzaPlaceWebApp" >
+<html ng-app="WebApp" >
 <head>
-  <title>PIZZA PLACE</title>
+  <title>Horse Racing Analysis</title>
 
   <link rel="stylesheet" href="./stylesheets/style.css" />
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular-route.js"></script>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular-route.js"></script>
+
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+   <script type="text/javascript" src="./stylesheets/plotly-latest.min.js"></script>
+
 
   <script src="/javascripts/angularApp.js"></script>
   <script src="/javascripts/controllers/maincontroller.js"></script>
-  <script src="/javascripts/controllers/editmenucontroller.js"></script>
-  <script src="/javascripts/controllers/pizzascontroller.js"></script>
-
-  <script src="/javascripts/controllers/desertscontroller.js"></script>
-  <script src="/javascripts/controllers/drinkscontroller.js"></script>
-  <script src="/javascripts/controllers/sidescontroller.js"></script>
-
+  <script src="/javascripts/controllers/eventsController.js"></script>
+  <script src="/javascripts/controllers/resultsController.js"></script>
+  <script src="/javascripts/controllers/raceController.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
   <style> .glyphicon-thumbs-up { cursor:pointer } </style>
 </head>
 
 <body ng-controller="mainController">
 
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<nav class="navbar navbar-inverse" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#/"><i class="fa fa-lg" style="color: white;"></i> PIZZA PLACE </a>
+      <a class="navbar-brand" href="#/"><i class="fa fa-lg" style="color: white;"></i> Horse Racing Analysis </a>
     </div>
 
     <ul class="nav navbar-nav navbar-right">
-      <div class="navbar-right">
-        <button type="button" class="btn btn-default navbar-btn btn-success">Register</button>
-        <button type="button" class="btn btn-default navbar-btn btn-primary">Log In</button>
+      <!--<div class="navbar-right">-->
+        <!--<button type="button"  onclick="location.href='#/register';" class="btn btn-default navbar-btn btn-success">Register</button>-->
+        <!--<button type="button" onclick="location.href='#/login';" class="btn btn-default navbar-btn btn-primary">Log In</button>-->
+      <!--</div>-->
+      <li><a href="#/"><i class="fa fa-home"></i> Home </a></li>
+
+      <div class="dropdown">
+        <li><a class="dropdown-toggle fa fa-list"> Upcoming Races <span class="caret"></span></a></li>
+        <div class="dropdown-content">
+          <a href="#/events">Todays Races</a>
+          <a href="#/tomorrowsraces">Tomorrows Races</a>
+        </div>
       </div>
-      <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
-      <li><a href="#edit"><i class="fa fa-list"></i> Edit Menu </a></li>
-      <li><a href="#menu"><i class="fa fa-list"></i> Menu </a></li>
-      <li><a href="#menu"><i class="fa fa-shopping-cart"></i> Shopping Cart </a></li>
+
+
+      <li><a href="#results"><i class="fa fa-list"></i> Results </a></li>
 
     </ul>
 
@@ -52,4 +62,13 @@
 </div>
 
 </body>
+<!--<footer class="footer">-->
+  <!--<div> Developed By: Michealin White</div>-->
+  <!--<p><a href="../public/pages/contact.ejs">Contact</a> </p>-->
+  <!--<p><a href="../public/pages/aboutus.ejs">About Us</a></p>-->
+  <!--<p><a href="../public/pages/disclaimer.ejs.ejs">Disclaimer</a>-->
+  <!--&lt;!&ndash;<p>089 457 4204</p>&ndash;&gt;-->
+  <!--&lt;!&ndash;<p>mich.white@hotmail.com</p>&ndash;&gt;-->
+  <!--</p>-->
+<!--</footer>-->
 </html>

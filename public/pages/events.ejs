@@ -1,0 +1,44 @@
+<div class=" text-center eventContainer">
+    <h2>{{message}}</h2>
+       <div ng-controller="eventsController as list">
+
+          Search: <input ng-model="query[queryBy]"  align="left"></input>
+
+
+
+             <table height="auto" align="center" text-align="center" valign="middle" halign="middle">
+                 <thead>
+                 <th> Time </th>
+                 <th> Name </th>
+                 <th> Location </th>
+                 </thead>
+                 <!--// EventName:String ,-->
+                 <!--//     EventTime: String,-->
+                 <!--//     EventDate: String,-->
+                 <!--//     EventLocation: String,-->
+                 <!--//     EventGoing: String,-->
+                 <!--//     EventNoRunners: Number,-->
+                 <!--//     EventAgeCategory: String,-->
+                 <!--//     EventClass: String,-->
+                 <!--//     EventLength:-->
+                 <tbody  ng-repeat="event in events  | orderBy:['EventLocation','EventTime'] | filter: query">
+                            <!--<div class="event-header" ng-if="getheader(event)"></div>-->
+                            <tr  style="height:55px; font-size:20px; margin-left:20px; valign="middle"; >
+
+                            <td>
+                                <span style="height:55px; font-size:20px; margin-left:20px;  valign="middle";>{{event.EventTime}}
+                            </td>
+                            <td>
+                                    <a href="/#/races/{{event._id}}" style="height:55px; font-size:20px; margin-left:20px;  valign="middle";>{{event.EventName}}
+                            </td>
+
+                            <td>
+                                <span style="height:55px; font-size:20px; margin-left:20px; valign="middle";>{{event.EventLocation}}
+                            </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+        </div>
+
+</div>

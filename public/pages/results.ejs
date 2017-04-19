@@ -1,0 +1,42 @@
+<div class="jumbotron text-center">
+    <h2> Results </h2>
+    <div ng-controller="resultsController as list">
+        Search: <input ng-model="query[queryBy]"  align="left"></input>
+
+
+
+        <div  ng-repeat="result in results  | filter: query ">
+
+               <h3 class="accordion"> {{result.EventTime}}  {{result.EventName}} {{result.EventLocation}}</h3>
+<div class="panel">
+            <table height="auto" class="table table table-responsive table-hover table-bordered">
+<tbody>
+
+<tr>
+    <th> Position  </th>
+    <th>  Horse </th>
+    <th> Trainer  </th>
+    <th> jockey  </th>
+</tr>
+<tr ng-repeat="horse in result.Result">
+    <td> {{horse.Position}}  </td>
+    <td>
+        {{horse.horseName}}
+    </td>
+    <td>
+
+        {{horse.trainerName}}
+    </td>
+    <td>
+
+        {{horse.jockeyName}}
+    </td>
+</tr>
+
+</tbody>
+            </table>
+            </div>
+
+    </div>
+
+</div>
