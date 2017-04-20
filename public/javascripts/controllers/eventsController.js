@@ -53,14 +53,21 @@ var app = angular.module('WebApp');
 
             $scope.query = {};
             $scope.queryBy = '$';
-    function findAll() {
-        $http.get('/events')
-            .success(function (data) {
-                $scope.events = data;
-            })
-            .error(function (data) {
-                console.log('Error: ' + data);
-            });
+            var races = [];
+            function findAll() {
+                $http.get('/events')
+                    .success(function (data) {
+                        data.forEach(function (race) {
+                            if(race.EventDate=="03/04/17"){
+                                races.push(race);
+                            }
+                        });
+
+                        $scope.events = races;
+                    })
+                    .error(function (data) {
+                        console.log('Error: ' + data);
+                    });
     };
 
 

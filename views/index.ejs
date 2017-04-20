@@ -10,6 +10,7 @@
 
 
   <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
    <script type="text/javascript" src="./stylesheets/plotly-latest.min.js"></script>
 
@@ -17,6 +18,7 @@
   <script src="/javascripts/angularApp.js"></script>
   <script src="/javascripts/controllers/maincontroller.js"></script>
   <script src="/javascripts/controllers/eventsController.js"></script>
+  <script src="/javascripts/controllers/tomorrowsEventsController.js"></script>
   <script src="/javascripts/controllers/resultsController.js"></script>
   <script src="/javascripts/controllers/raceController.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
@@ -42,7 +44,7 @@
         <li><a class="dropdown-toggle fa fa-list"> Upcoming Races <span class="caret"></span></a></li>
         <div class="dropdown-content">
           <a href="#/events">Todays Races</a>
-          <a href="#/tomorrowsraces">Tomorrows Races</a>
+          <a href="#/tomorrowsRaces">Tomorrows Races</a>
         </div>
       </div>
 
@@ -62,13 +64,16 @@
 </div>
 
 </body>
-<!--<footer class="footer">-->
-  <!--<div> Developed By: Michealin White</div>-->
-  <!--<p><a href="../public/pages/contact.ejs">Contact</a> </p>-->
-  <!--<p><a href="../public/pages/aboutus.ejs">About Us</a></p>-->
-  <!--<p><a href="../public/pages/disclaimer.ejs.ejs">Disclaimer</a>-->
-  <!--&lt;!&ndash;<p>089 457 4204</p>&ndash;&gt;-->
-  <!--&lt;!&ndash;<p>mich.white@hotmail.com</p>&ndash;&gt;-->
-  <!--</p>-->
-<!--</footer>-->
+<footer style="text-align: center" class="footer">
+  <h5 style="text-align: center"> Developed By: Michealin White
+    &copy; 2017 Horse Racing Analysis,
+    All Rights Reserved.</h5>
+
+  <a style="margin-left:3%" href="/#/contact">Contact</a>
+  <a style="margin-left:3%" href="/#/aboutUs">About Us</a>
+  <a style="margin-left:3%"   href="/#/disclaimer">Disclaimer</a>
+  <!--<p>089 457 4204</p>-->
+  <!--<p>mich.white@hotmail.com</p>-->
+
+</footer>
 </html>

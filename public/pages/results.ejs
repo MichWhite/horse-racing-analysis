@@ -1,14 +1,21 @@
 <div class="jumbotron text-center">
     <h2> Results </h2>
     <div ng-controller="resultsController as list">
-        Search: <input ng-model="query[queryBy]"  align="left"></input>
+
+
+            Search: <input ng-model="query[queryBy]"  align="left"></input>
 
 
 
-        <div  ng-repeat="result in results  | filter: query ">
 
-               <h3 class="accordion"> {{result.EventTime}}  {{result.EventName}} {{result.EventLocation}}</h3>
-<div class="panel">
+        <div  ng-repeat="result in results  | orderBy:['EventDate','EventLocation','EventTime']   | filter: query ">
+
+
+            <accordion >
+                <accordion-group heading="{{result.EventTime}} {{result.EventDate}} - {{result.EventName}} - {{result.EventLocation}}" is-open="isAccordionOpen">
+
+
+
             <table height="auto" class="table table table-responsive table-hover table-bordered">
 <tbody>
 
@@ -35,8 +42,12 @@
 
 </tbody>
             </table>
-            </div>
+                </accordion-group>
 
-    </div>
+            </accordion>
 
+
+        </div>
+
+</div>
 </div>

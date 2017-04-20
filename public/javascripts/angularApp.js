@@ -1,4 +1,4 @@
-var app = angular.module('WebApp', ['ngRoute', 'ui', 'ui.filters']);
+var app = angular.module('WebApp', ['ngRoute', 'ui', 'ui.filters', 'ui.bootstrap']);
 
 
 app.factory('historical', ['$http', function($http) {
@@ -38,15 +38,31 @@ app.config(['$locationProvider' ,'$routeProvider',
             .when('/events', {
                 templateUrl : 'pages/events.ejs',
                 controller  : 'eventsController'
+            })
+            .when('/tomorrowsRaces', {
+                templateUrl : 'pages/tomorrowEvents.ejs',
+                controller  : 'tomorrowsEventsController'
             }).
-        when('/races/:EventId', {
-            templateUrl: 'pages/races.ejs',
-            controller: 'raceController'
+            when('/races/:EventId', {
+                templateUrl: 'pages/races.ejs',
+                controller: 'raceController'
 
         }).
         when('/results', {
             templateUrl: 'pages/results.ejs',
             controller: 'resultsController'
+
+        }).
+        when('/contact', {
+            templateUrl: 'pages/contact.ejs'
+
+        }).
+        when('/disclaimer', {
+            templateUrl: 'pages/disclaimer.ejs'
+
+        }).
+        when('/aboutUs', {
+            templateUrl: 'pages/aboutus.ejs'
 
         });
 

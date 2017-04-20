@@ -1,24 +1,37 @@
 body{
   background-color: green;
   background-image: url('../images/grass-background.jpg');
-  background-size: cover;
+  background-size: auto;
 }
 #chartContainer{
 margin-top : 10%;
-
   margin-right:auto;
   margin-left:auto;
   alignment: center;
 /*border: 2px solid;*/
-
   text-align: center;
   vertical-align:middle;
 }
+html,
+body {
+
+  margin:0;
+
+  padding:0;
+
+  height:100%;
+}
+
 
 .eventContainer{
   background-color: #f1f1f1;
 }
 #main{
+
+  min-height:100%;
+
+
+  position:relative;
 
   margin-right:10%;
   margin-left:10%;
@@ -77,11 +90,16 @@ a {
 .footer {
   background-color: black;
   color: darkgrey;
-text-align: right;
-  position: static;
-  /*bottom: 0;*/
+  /*position: relative;*/
+  bottom: 0;
+  /*position:absolute;*/
+
+  left: 0;
+  right: 0;
   width: 100%;
-  height: 100px;
+  /*height: 15%;*/
+  padding-top: 0.5%;
+  font-weight: bold;
 }
 
 
@@ -106,26 +124,6 @@ text-align: right;
   color: white;
 }
 
-h3.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-h3.accordion.active, button.accordion:hover {
-  background-color: #ddd;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-div.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
+td, th{
+  text-align:center;
 }

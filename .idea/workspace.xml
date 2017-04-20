@@ -2,61 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd55e6c5-9f34-40a2-ba60-119f0533ce02" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/events.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/historical.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/raceDummyData.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/races.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/results.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/users.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/controllers/eventsController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/controllers/raceController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/retriveData/BetFairAPI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/retriveData/Calculation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/retriveData/HistoricalSearch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/retriveData/cronJob.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pages/aboutus.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pages/contact.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pages/disclaimer.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pages/events.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pages/races.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pages/results.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/canvasjs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/events.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/historical.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/races.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/results.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/deserts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/drinks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/pizzas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/sides.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/chocolate-icecream.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/oreo_icecream.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/pizza.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/strawberry-icecream.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/controllers/desertscontroller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/controllers/drinkscontroller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/controllers/editmenucontroller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/controllers/pizzascontroller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/controllers/sidescontroller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/addItem.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/deserts.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/drinks.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/pizzas.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/pages/sides.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/deserts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/drinks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/pizzas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/sides.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/pages/signup.ejs" afterPath="$PROJECT_DIR$/public/images/grass-background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/controllers/tomorrowsEventsController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pages/tomorrowEvents.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/angularApp.js" afterPath="$PROJECT_DIR$/public/javascripts/angularApp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/controllers/maincontroller.js" afterPath="$PROJECT_DIR$/public/javascripts/controllers/maincontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/pages/home.ejs" afterPath="$PROJECT_DIR$/public/pages/home.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/controllers/eventsController.js" afterPath="$PROJECT_DIR$/public/javascripts/controllers/eventsController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/controllers/resultsController.js" afterPath="$PROJECT_DIR$/public/javascripts/controllers/resultsController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/pages/aboutus.ejs" afterPath="$PROJECT_DIR$/public/pages/aboutus.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/pages/contact.ejs" afterPath="$PROJECT_DIR$/public/pages/contact.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/pages/disclaimer.ejs" afterPath="$PROJECT_DIR$/public/pages/disclaimer.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/pages/events.ejs" afterPath="$PROJECT_DIR$/public/pages/events.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/pages/results.ejs" afterPath="$PROJECT_DIR$/public/pages/results.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/users.js" afterPath="$PROJECT_DIR$/routes/users.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -78,58 +35,54 @@
       <file leaf-file-name="results.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/pages/results.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="254">
+              <caret line="14" column="65" lean-forward="false" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resultsController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/resultsController.js">
+      <file leaf-file-name="tomorrowEvents.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/pages/tomorrowEvents.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="44">
+              <caret line="2" column="52" lean-forward="false" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2485">
-              <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            <state relative-caret-position="66">
+              <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="raceController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/raceController.js">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="259">
+              <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="81" />
+              <folding>
+                <element signature="n#style#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#footer#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#2;n#footer#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eventsController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/eventsController.js">
+      <file leaf-file-name="aboutus.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/pages/aboutus.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="54" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="events.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/pages/events.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="23" column="108" lean-forward="false" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="108" />
+            <state relative-caret-position="154">
+              <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -146,7 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Pizza</find>
       <find>pizza</find>
       <find>piz</find>
       <find>us</find>
@@ -176,6 +128,7 @@
       <find>backg</find>
       <find>findOne</find>
       <find>sear</find>
+      <find>http</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\michealin\Desktop\SDD 4th Year\4th year semester 2\Dynamic Web Development\PizzaPlace\public\javascripts\controllers</dir>
@@ -187,10 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/javascripts/controllers/drinkscontroller.js" />
-        <option value="$PROJECT_DIR$/models/users.js" />
-        <option value="$PROJECT_DIR$/public/pages/deserts.ejs" />
-        <option value="$PROJECT_DIR$/public/pages/pizzas.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/controllers/admin.js" />
         <option value="$PROJECT_DIR$/public/pages/signup.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/controllers/addusercontroller.js" />
@@ -220,24 +169,28 @@
         <option value="$PROJECT_DIR$/models/events.js" />
         <option value="$PROJECT_DIR$/routes/races.js" />
         <option value="$PROJECT_DIR$/public/javascripts/retriveData/HistoricalSearch.js" />
-        <option value="$PROJECT_DIR$/public/pages/aboutus.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/retriveData/Calculation.js" />
         <option value="$PROJECT_DIR$/models/historical.js" />
         <option value="$PROJECT_DIR$/routes/historical.js" />
         <option value="$PROJECT_DIR$/public/pages/races.ejs" />
         <option value="$PROJECT_DIR$/routes/results.js" />
-        <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/models/results.js" />
         <option value="$PROJECT_DIR$/models/horses.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/angularApp.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/horses.js" />
         <option value="$PROJECT_DIR$/public/javascripts/controllers/raceController.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/controllers/tomorrowsEventsController.js" />
         <option value="$PROJECT_DIR$/public/pages/events.ejs" />
+        <option value="$PROJECT_DIR$/public/pages/tomorrowEvents.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/controllers/eventsController.js" />
         <option value="$PROJECT_DIR$/public/javascripts/controllers/resultsController.js" />
         <option value="$PROJECT_DIR$/public/pages/results.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/angularApp.js" />
+        <option value="$PROJECT_DIR$/public/pages/contact.ejs" />
+        <option value="$PROJECT_DIR$/public/pages/disclaimer.ejs" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/public/pages/aboutus.ejs" />
       </list>
     </option>
   </component>
@@ -264,10 +217,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-181" />
-    <option name="y" value="120" />
-    <option name="width" value="1633" />
-    <option name="height" value="803" />
+    <option name="x" value="145" />
+    <option name="y" value="274" />
+    <option name="width" value="1639" />
+    <option name="height" value="721" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -308,20 +261,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HorseRacingAnalysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HorseRacingAnalysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -415,20 +354,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HorseRacingAnalysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HorseRacingAnalysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -451,10 +376,10 @@
       <recent name="C:\Users\michealin\Desktop\SDD 4th Year\4th year semester 2\Dynamic Web Development\PizzaPlace" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\michealin\Desktop\test-data\HorseRacingAnalysis\models" />
-      <recent name="C:\Users\michealin\Desktop\test-data\HorseRacingAnalysis\routes" />
       <recent name="C:\Users\michealin\Desktop\test-data\HorseRacingAnalysis\public\pages" />
       <recent name="C:\Users\michealin\Desktop\test-data\HorseRacingAnalysis\public\javascripts\controllers" />
+      <recent name="C:\Users\michealin\Desktop\test-data\HorseRacingAnalysis\models" />
+      <recent name="C:\Users\michealin\Desktop\test-data\HorseRacingAnalysis\routes" />
       <recent name="C:\Users\michealin\Desktop\test-data\HorseRacingAnalysis\public\stylesheets" />
     </key>
   </component>
@@ -1831,27 +1756,27 @@
       <workItem from="1491217497262" duration="16111000" />
       <workItem from="1491496374321" duration="4107000" />
       <workItem from="1491824874932" duration="36071000" />
-      <workItem from="1492092126175" duration="32720000" />
+      <workItem from="1492092126175" duration="46704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265931000" />
+    <option name="totallyTimeSpent" value="279915000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-181" y="120" width="1633" height="803" extended-state="0" />
+    <frame x="145" y="274" width="1639" height="721" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35664776" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35655996" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35454544" sideWeight="0.24945652" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21316615" sideWeight="0.7505435" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24460432" sideWeight="0.7505435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24985574" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41964287" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3977747" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39747635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1871,15 +1796,15 @@
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36793542" sideWeight="0.49592614" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.067398116" sideWeight="0.7505435" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24460432" sideWeight="0.7505435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41964287" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35701165" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35655996" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24985574" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3977747" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39747635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1890,13 +1815,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/pages/deserts.ejs" />
-    <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/desertscontroller.js" />
     <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/cartController.js" />
     <entry file="file://$PROJECT_DIR$/routes/cart.js" />
     <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/addusercontroller.js" />
@@ -2000,13 +1923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/pages/contact.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/retriveData/HistoricalSearch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -2014,34 +1930,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/pages/aboutus.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/pages/disclaimer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/retriveData/Calculation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="60" column="17" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/pages/home.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -2090,14 +1982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="40" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
-          <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -2152,34 +2036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/angularApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/pages/races.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1492175162538" expanded="false" signature="2207:2261" ph="..." />
-            <marker date="1492175162538" expanded="false" signature="2389:2443" ph="..." />
-            <marker date="1492175162538" expanded="false" signature="2570:2624" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMTraversalAndRange.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -2188,50 +2044,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/raceController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/eventsController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="54" selection-end-column="33" />
+        <state relative-caret-position="35">
+          <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/resultsController.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/tomorrowsEventsController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="349">
+          <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/raceController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/pages/events.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="23" column="108" lean-forward="false" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="108" />
+        <state relative-caret-position="225">
+          <caret line="22" column="93" lean-forward="false" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/races.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-258">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <marker date="1492175162538" expanded="false" signature="2207:2261" ph="..." />
+            <marker date="1492175162538" expanded="false" signature="2389:2443" ph="..." />
+            <marker date="1492175162538" expanded="false" signature="2570:2624" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/resultsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/tomorrowEvents.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="52" lean-forward="false" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/pages/results.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="254">
+          <caret line="14" column="65" lean-forward="false" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/angularApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="64" column="39" lean-forward="false" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/contact.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/home.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/disclaimer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2485">
-          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        <state relative-caret-position="66">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#footer#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#footer#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/aboutus.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
           <folding />
         </state>
       </provider>

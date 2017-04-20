@@ -3,13 +3,18 @@ var app = angular.module('WebApp');
     app.controller('resultsController', ['$scope', '$http',
         function($scope, $http) {
 
-        accordion();
+
+            $scope.isAccordionOpen=false;
+            $scope.$watch('isAccordionOpen', function(isOpen){
+                console.log('First group was opened');
+            });
 
             $scope.query = {};
             $scope.queryBy = '$';
     $scope.message = "Results ";
             Allhorses= [];
             findHorses();
+
 
 
     function findAll() {
@@ -22,11 +27,12 @@ var app = angular.module('WebApp');
                         .success(function (event) {
 
 
+                            result['EventDate'] = event[0].EventDate;
                             result['EventName'] = event[0].EventName;
                             result['EventTime'] = event[0].EventTime;
                             result['EventLocation'] = event[0].EventLocation;
                         });
-
+                console.log(result);
                     result.Result.forEach(function (horse){
 
                         Allhorses.forEach(function (runner) {
@@ -80,23 +86,6 @@ console.log(result)
             }
 
 
-            function accordion() {
-                var acc = document.getElementsByClassName("accordion");
-                var i;
-
-                for (i = 0; i < acc.length; i++) {
-                    acc[i].onclick = function () {
-                        this.classList.toggle("active");
-                        console.log(this.nextElementSibling);
-                        var panel = this.nextElementSibling;
-                        if (panel.style.maxHeight) {
-                            panel.style.maxHeight = null;
-                        } else {
-                            panel.style.maxHeight = panel.scrollHeight + "px";
-                        }
-                    }
-                }
-            }
 
 
   }]);
